@@ -10,16 +10,19 @@ class InputWidget extends StatefulWidget {
 class InputWidgetState extends State<InputWidget> {
   final textEditingController = TextEditingController();
 
+  String showValue = '';
   String textValue = '';
 
   void textChanged(String value) {
     setState(() {
-      textValue = value;
+      showValue = textValue + textEditingController.text;
     });
   }
 
   void textSubmitted(String value) {
     print('text submitted: ' + value);
+    textValue += textEditingController.text;
+    textEditingController.text = '';
   }
 
   @override
@@ -37,7 +40,7 @@ class InputWidgetState extends State<InputWidget> {
             onChanged: textChanged,
             onSubmitted: textSubmitted,
           ),
-          Text(textValue),
+          Text(showValue),
         ],
       ),
     );
