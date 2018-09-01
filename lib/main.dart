@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/TextWidget.dart';
+
 void main() {
   runApp(MaterialApp(
-    home: Center(
-      child: Text('Hello'),
-    ),
+    home: TextWidget(),
   ));
 }
