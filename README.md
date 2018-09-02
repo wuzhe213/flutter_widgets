@@ -1,8 +1,12 @@
 # flutter_widgets
 
-A new Flutter project.
+This project is for learning flutter's built-in widgets.  
 
-## Getting Started
+## Links
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+[documentation](https://flutter.io/).  
+[flutter built-in widgets](https://flutter.io/widgets/).
+[cookbooks](https://flutter.io/cookbook/).
+
+
+
